@@ -6,6 +6,10 @@
     font-family: 'Poppins', sans-serif;
     font-family: 'Space Mono', monospace;
  }
+ main{
+    max-width: 1250px;
+    margin: auto;
+ }
  /* start header section  */
  .header-1{
     padding: 20px 100px;
@@ -20,6 +24,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
 }
 nav>ul{
     display: flex;
@@ -48,7 +53,7 @@ nav a:hover:not(.icon){
     justify-content: space-between;
     align-items: center;
     margin-top: 50px;
-    background-image: url("/images/Circle\ design.svg");
+    background-image: url("images/Circle\ design.svg");
     background-repeat: no-repeat;
     background-position:right 0px;
     
@@ -88,3 +93,144 @@ nav a:hover:not(.icon){
    padding-left: 10px;
 }
 /* end banner and header section  */
+
+/* start sponsor section  */
+
+.sponsor{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+.Collection-section{
+    padding: 50px;
+}
+.Collection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.Collection-title{
+    font-size: 2rem;
+}
+.product-image{
+    width: 100%;
+}
+.products-section{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+.products{
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 1px 1px 30px  rgba(210, 210, 210, 0.99);
+    width: 90%;
+}
+.product-title{
+    font-size: 1.5rem;
+}
+.product-price{
+    font-size: 1rem;
+}
+.see-more{
+    text-align: right;
+    padding: 20px;
+}
+.see-more-product{
+    color: #e02c6d;
+}
+
+
+/* end product section  */
+
+
+/* start featured section  */
+.featured{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 20px;
+}
+.featured-content{
+    margin-left: 100px;
+}
+.featured-title{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* end featured section  */
+
+/* start footer section  */
+footer{
+    background-color: #232323;
+    color: white;
+}
+.footer-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 50px 10px;
+    margin-top: 50px;
+
+}
+.footer-logo a{
+    color: white;
+}
+@media screen and (max-width:578px) {
+   .header-1{
+    padding: 5px;
+   } 
+   nav>ul{
+    flex-direction: column;
+  }
+   .navigation-menu{
+    flex-direction: column;
+   }
+   .banner-title{
+    font-size: 1.8rem;
+   }
+   .banner{
+    flex-direction: column-reverse;
+    text-align: center;
+    background-image: url("images/Circle\ design.svg");
+    background-repeat: no-repeat;
+    background-position:center top;
+    background-size: contain;
+   }
+   .banner-image{
+    margin:0px;
+    }
+    .sponsor{
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    .Collection-title{
+        text-align: center;
+    }
+    .Collection-section{
+        padding: 10px;
+        
+    }
+    .products-section{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .featured{
+        flex-direction:column-reverse;
+    }
+    .featured-content{
+        margin: 5px;
+        text-align: center;
+    }
+    .footer-section{
+        text-align: center;
+        padding: 50px;
+    }
+}
